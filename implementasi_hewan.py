@@ -1,18 +1,4 @@
-from abc import ABC, abstractmethod
 
-# SEMENTARA
-class Hewan(ABC):
-    def __init__(self, nama):
-        self.nama = nama
-
-    @abstractmethod
-    def makan(self):
-        pass
-
-class BisaTerbang(ABC):
-    @abstractmethod
-    def terbang(self):
-        pass
 
 # TUGAS NO 4
 
