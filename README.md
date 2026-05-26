@@ -1,5 +1,9 @@
-# Welcome to GitHub Desktop!
+# Pembagian Tugas 
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+Abyan Farisa - Git Administrator & Integrator Code
+Dafa Syahrul Syah Baharudin - Analis SOLID (Teori & Identifikasi Masalah)
+Faradilla Sari - Developer Abstraksi & Interface (Prinsip OCP & ISP)
+Muzni Mubarok Salim - Developer Implementasi Hewan (Prinsip LSP)
+Jihan Sofia - Developer Sistem Kandang & Kebun Binatang (Prinsip SRP & DIP)
+Niken Syafira Zulfarida - Pengujian kode
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
