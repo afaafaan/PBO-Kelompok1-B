@@ -1,6 +1,4 @@
-
-
-# TUGAS NO 4
+from abstraksi_hewan import Hewan, BisaTerbang, BisaBerenang
 
 class Burung(Hewan, BisaTerbang):
     def makan(self):
