@@ -1,31 +1,38 @@
-from abstraksi_hewan import Hewan
-class Hewan:
-    def __init__(self, nama, jenis):
-        self.nama = nama
-        self.jenis = jenis
+from abstraksi_hewan import BisaTerbang, BisaBerenang
 
-    def makan(self):
-        print(f"{self.nama} sedang makan.")
+class KandangAbstrak:
+    def tambah_hewan(self, hewan):
+        pass
 
-    def terbang(self):
-        print(f"{self.nama} sedang terbang.")
+    def get_semua_hewan(self):
+        pass
 
-class Kandang:
+class Kandang(KandangAbstrak):
     def __init__(self):
         self.hewan_list = []
 
     def tambah_hewan(self, hewan):
         self.hewan_list.append(hewan)
 
+    def get_semua_hewan(self):
+        return self.hewan_list
+
+    def lihat_hewan(self):
+        for hewan in self.hewan_list:
+            print(f"- {hewan.nama}")
+
 class PembersihKandang:
     def bersihkan(self):
         print("Kandang dibersihkan.")
 
 class KebunBinatang:
-    def __init__(self, kandang):
+    def __init__(self, kandang: KandangAbstrak):
         self.kandang = kandang
 
     def rawat_semua_hewan(self):
-        for hewan in self.kandang.hewan_list:
+        for hewan in self.kandang.get_semua_hewan():
             hewan.makan()
-            hewan.terbang()
+            if isinstance(hewan, BisaTerbang):
+                hewan.terbang()
+            if isinstance(hewan, BisaBerenang):
+                hewan.berenang()

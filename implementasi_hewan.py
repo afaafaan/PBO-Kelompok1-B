@@ -14,6 +14,11 @@ class Singa(Hewan):
 class Sapi(Hewan):
     def makan(self):
         print(f"{self.nama} sedang makan.")
+
 class Bebek(Hewan, BisaBerenang):
     def makan(self):
         print(f"{self.nama} sedang makan.")
+
+    def berenang(self):
+        print(f"{self.nama} sedang berenang.")
+
