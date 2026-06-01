@@ -15,12 +15,10 @@ class Sapi(Hewan):
     def makan(self):
         print(f"{self.nama} sedang makan.")
 
-class Bebek(Hewan, BisaTerbang, BisaBerenang):
+class Bebek(Hewan, BisaBerenang):
     def makan(self):
         print(f"{self.nama} sedang makan.")
 
-    def terbang(self):
-        print(f"{self.nama} sedang terbang.")
-
     def berenang(self):
         print(f"{self.nama} sedang berenang.")
+
